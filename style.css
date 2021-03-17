@@ -7,7 +7,7 @@
   width: 10px;
 }
 
-a.secondary-button {
+.secondary-button {
   background-color: #FFD100;
   color: #000000;
   border: 1px solid #FFD100;
@@ -24,9 +24,9 @@ a.secondary-button {
   color: #ffffff;
 }
 
-a.main-button {
-  background-color: #007236;
-  color: #ffffff;
+.main-button {
+  background-color: transparent;
+  color: #007236;
   border: 1px solid #007236;
   font-size: 18px;
   padding: 10px 20px;
@@ -37,8 +37,8 @@ a.main-button {
 }
 
 .main-button:hover {
-  background-color: transparent;
-  color: #007236;
+  background-color: #007236;
+  color: #ffffff;
 }
 
 * {
@@ -477,22 +477,6 @@ div.text-section div.inner-section p {
   font-size: 20px;
   text-align: center;
   margin-bottom: 20px;
-}
-
-div.text-section div.inner-section a.know-more {
-  margin: 50px;
-  font-size: 16px;
-  text-transform: uppercase;
-  border: 1px solid #007236;
-  background-color: #ffffff;
-  color: #007236;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-div.text-section div.inner-section a.know-more:hover {
-  color: #ffffff;
-  background-color: #007236;
 }
 
 div.text-section div.inner-section div.cards-container {

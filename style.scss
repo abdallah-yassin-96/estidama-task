@@ -12,7 +12,7 @@ $white : #ffffff;
     width: 10px;
 }
 
-a.secondary-button{
+.secondary-button{
     background-color: $yellow;
     color: $black;
     border: 1px solid $yellow;
@@ -28,9 +28,9 @@ a.secondary-button{
     color: $white;
 }
 
-a.main-button{
-    background-color: $green;
-    color: $white;
+.main-button{
+    background-color: transparent;
+    color: $green;
     border: 1px solid $green;
     font-size: 18px;
     padding: 10px 20px;
@@ -40,8 +40,8 @@ a.main-button{
 }
 
 .main-button:hover{
-    background-color: transparent;
-    color: $green;
+    background-color: $green;
+    color: $white;
 }
 
 *{
@@ -371,9 +371,6 @@ header{
     }
 }
 
-
-
-
 .inner-section{
     margin: 20px auto;
     max-width: 1140px;
@@ -396,20 +393,6 @@ div.text-section{
             font-size: 20px;
             text-align: center;
             margin-bottom: 20px;
-        }
-        a.know-more{
-            margin: 50px;
-            font-size: 16px;
-            text-transform: uppercase;
-            border: 1px solid $green;
-            background-color:  $white;
-            color: $green;
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-        a.know-more:hover{
-            color: $white;
-            background-color: $green;
         }
         div.cards-container{
             display: flex;

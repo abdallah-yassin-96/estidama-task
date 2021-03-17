@@ -46,17 +46,7 @@ const showSlide = () => {
 
 let interval = setInterval( () => {
     showSlide();
-}, 300000);
-
-slider.addEventListener('mouseover', () => {
-    clearInterval(interval);
-});
-
-slider.addEventListener('mouseout', () => {
-    interval = setInterval( () => {
-        showSlide();
-    }, 3000000);
-});
+}, 17000);
 
 //-----------------------------
 let slideIndex1 = 0;
@@ -103,17 +93,7 @@ const showSlide1 = () => {
 
 let interval1 = setInterval( () => {
     showSlide1();
-}, 300000);
-
-slider1.addEventListener('mouseover', () => {
-    clearInterval(interval1);
-});
-
-slider1.addEventListener('mouseout', () => {
-    interval1 = setInterval( () => {
-        showSlide1();
-    }, 3000000);
-});
+}, 5000);
 //-------------------
 
 
