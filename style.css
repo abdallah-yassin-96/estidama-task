@@ -123,8 +123,6 @@ header .first-header .search-bar form {
 
 header .first-header .search-bar form .search-bar-input {
   padding: 6px 15px;
-  -webkit-transform: translateX(180%);
-          transform: translateX(180%);
 }
 
 header .first-header .search-bar form .search-bar-input-view {
@@ -137,8 +135,6 @@ header .first-header .search-bar form .search-button {
   color: #fff;
   padding: 8px 15px;
   border: none;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
 }
 
 header .first-header .search-bar form .search-button-view {
