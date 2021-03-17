@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Estidama</title>
+        <link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/01a1b27452.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+	</head>
+	<body>
+		<header>
+			<div class="first-header">
+				<div class="social-icons-container">
+					<a href="#" class="social-icon">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#" class="social-icon">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="#" class="social-icon">
+						<i class="fas fa-video"></i>
+					</a>
+				</div>
+
+				<div class="language">
+					<a href="#">عربي</a>
+				</div>
+
+				<div class="search-bar">
+					<a href="#" onclick="return searchBar()" id="search-icon">
+						<i class="fas fa-search"></i>
+					</a>
+					<form action="" method="POST" class="search-form">
+						<input type="text" name="search-bar" class="search-bar-input">
+						<input type="submit" name="search-button" value="Search" class="search-button">
+					</form>
+				</div>
+			</div>
+
+			<div class="navbar">
+				<ul>
+					<li class="logo">
+						<a href="#">
+							<img src="../estidama-task/logo.svg" alt="Logo" width="100">
+						</a>
+					</li>
+					<div class="menu">
+						<li>
+							<a href="#" class="menu-item active-menu-item">Home</a>
+						</li>
+						<li class="about-item">
+							<a href="#" class="menu-item">About Us</a>    
+                            <div class="sub-menu" id="#about-menu">
+                                <ul>
+                                    <li><a href="">ABOUT ESTIDAMAH</a></li>
+                                    <li><a href="">Chairman Message</a></li>
+                                    <li><a href="">Strategic Objectives</a></li>
+                                    <li><a href="">Board</a></li>
+                                    <li><a href="">Partners</a></li>
+                                    <li><a href="">Contact us</a></li>
+                                </ul>
+                            </div>
+						</li>
+						<li class="services-item">
+							<a href="#"class="menu-item">Our services</a>
+                            <div class="sub-menu" id="#services-menu">
+                                <ul>
+                                    <li><a href="">Consultation</a></li>
+                                    <li><a href="">Contracted Research</a></li>
+                                    <li><a href="">Training</a></li>
+                                    <li><a href="">Workshop</a></li>
+                                    <li><a href="">Open Day</a></li>
+                                    <li><a href="">Internship</a></li>
+                                </ul>
+                            </div>
+						</li>
+						<li class="research-item">
+							<a href="#"class="menu-item">Research</a>
+                            <div class="sub-menu" id="#research-menu">
+                                <ul>
+                                    <li><a href="">Research Themes</a></li>
+                                    <li><a href="">Programs</a></li>
+                                    <li><a href="">Projects</a></li>
+                                    <li><a href="">On-Farm Trials</a></li>
+                                </ul>
+                            </div>
+						</li>
+						<li class="publication-item">
+							<a href="#"class="menu-item">Publication</a>
+                            <div class="sub-menu" id="#publication-menu">
+                                <ul>
+                                    <li><a href="">Flyers and Brochures</a></li>
+                                    <li><a href="">Posters</a></li>
+                                    <li><a href="">Scientific Publications</a></li>
+                                </ul>
+                            </div>
+						</li>
+						<li class="media-item">
+							<a href="#"class="menu-item">Media Center</a>
+                            <div class="sub-menu" id="#media-menu">
+                                <ul>
+                                    <li><a href="">News</a></li>
+                                    <li><a href="">Events</a></li>
+                                    <li><a href="">Gallery</a></li>
+                                </ul>
+                            </div>
+						</li>
+						<li>
+							<a href="#"class="menu-item">Careers</a>
+						</li>
+					</div>
+
+				</ul>
+			</div>
+		</header>
+
+        <div class="slider first-slider">
+            <div class="slides first-slider-slides">
+                <div class="slide first-slider-slide">
+                    <div class="slide-data">
+                        <video src="EstWeb- Homepage.mp4" autoplay loop muted></video>
+                        <div class="content">
+                            <h1 id="video-heading">Effectively Handle Scarce Water Resources with Sustainable Agriculture Technologies and Systems</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide first-slider-slide">
+                    <div class="slide-data">
+                        <div class="content">
+                            <h1>Apply innovative agri-technologies</h1>
+                            <p>Apply and promote innovative technology-enabled practices to deliver sustainable agriculture research for protected cultivation</p>
+                            <a href="#" class="secondary-button">Our Research Themes</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="dots">
+                <span onclick="currentSlide(1)" class=" dot-active first-slider-span"></span>
+                <span onclick="currentSlide(2)" class="first-slider-span"></span>
+            </div>
+        </div>
+       
+        <div class="text-section">
+           <div class="inner-section">
+               <h2 class="section-header">who we are</h2>
+               <p>
+                    The National Research and Development Center for Sustainable Agriculture (Estidamah) is a standalone legal not-for-profit research center based in the Kingdom of Saudi Arabia, managed by a board of directors and chaired by the Minister of Environment,
+                    Water and Agriculture. In 2011, Estidamah was set up upon a joint agreement between the Ministry of Environment, Water, and Agriculture (MEWA) and King Saud University (KSU) in Riyadh Techno Valley to serve as the main office of the Center, with support of the Saudi Basic Industries Corporation (SABIC).
+                </p>
+                <a href="#" class="know-more">know more</a>
+           </div>
+       </div>
+
+       <div class="parallax-section parallax1"></div>
+
+       <div class="text-section">
+            <div class="inner-section">
+                <h2 class="section-header">OUR IMPACT</h2>
+                <p>
+                    At the heart of our research and studies, our past and current research works focus on the need to secure sustainable agricultural products for the people of Saudi Arabia. Practically, we deliver our impact by addressing various key challenges, including – but not limited to – scarce water resources and extreme climate conditions; through a widely open innovative culture and strategic partnership with the World’s leaders in protected cultivation, as well as promoting good agricultural practices throughout the Kingdom. Here, you can find more information on our research, works, projects and successes.
+                </p>
+            </div>
+        </div>
+
+       <div class="parallax-section parallax2"></div>
+
+       <div class="text-section">
+            <div class="inner-section">
+                <h2 class="section-header">WHAT WE DO</h2>
+                <p>
+                    We are conducting applied research in sustainable agriculture to promote collaboration, technology, and knowledge transfer in the areas of horticulture.
+                </p>
+                <div class="cards-container">
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/card1.jpg" alt="card1-image">
+                            </div>
+                            <h3 class="card-title">Latest News</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/card2.jpg" alt="card2-image">
+                            </div>
+                            <h3 class="card-title">Publications</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/card3.jpeg" alt="card3-image">
+                            </div>
+                            <h3 class="card-title">Research Themes</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-section projects-section">
+            <div class="inner-section">
+                <h2 class="section-header">PROJECTS</h2>
+                <div class="slider projects-slider second-slider">
+                    <div class="slides second-slider-slides">
+                        <div class="slide second-slider-slide">
+                            <div class="slide-data">
+                                <div class="left-column">
+                                    <h3>Evaluation of Nine Tomato Cultivars under Hi-Tech and Med-Tech Greenhouses</h3>
+                                    <p>Tomato is one of the most important greenhouse vegetable crops grown in the Kingdom of Saudi Arabia, with 1260 hectares greenhouse planted area.</p>
+                                    <a href="#" class="main-button">SEE RESULT</a>
+                                </div>
+                                <div class="right-column">
+                                    <img src="images/second-slider1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide second-slider-slide">
+                            <div class="slide-data">
+                                <div class="left-column">
+                                    <h3>Evaluation of Nine Tomato Cultivars under Hi-Tech and Med-Tech Greenhouses</h3>
+                                    <p>Tomato is one of the most important greenhouse vegetable crops grown in the Kingdom of Saudi Arabia, with 1260 hectares greenhouse planted area.</p>
+                                    <a href="#" class="main-button">SEE RESULT</a>
+                                </div>
+                                <div class="right-column">
+                                    <img src="images/second-slider2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="dots">
+                        <span onclick="currentSlide1(1)" class=" dot-active second-slider-span"></span>
+                        <span onclick="currentSlide1(2)" class="second-slider-span"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="text-section events-section">
+            <div class="inner-section">
+                <h2 class="section-header">LATEST EVENTS</h2>
+                <p>We have interested horticulture result that we want to share with you, join us on on of the following</p>
+                <div class="cards-container">
+                    <a href="#" class="card-link">
+                        <div class="card events-card">
+                            <div class="card-image"><img src="images/card4.jpeg" alt="card4"></div>
+                            <h3 class="card-title events-cards-title">Modern Agriculture is a Promising Investment in Greenhouses</h3>
+                            <div class="date-and-location">
+                                <span class="date"><i class="fa fa-calendar"></i> November 04, 2020</span>
+                                <span class="location"><i class="fa-map-marker"></i>Hali Region</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card-link">
+                        <div class="card events-card">
+                            <div class="card-image"><img src="images/card5.png" alt="card5"></div>
+                            <h3 class="card-title events-cards-title">Estidamah participated in a workshop to raise awareness of Good Agricultural Practices in Greenhouses in Tabuk</h3>
+                            <div class="date-and-location">
+                                <span class="date"><i class="fa fa-calendar"></i> November 04, 2020</span>
+                                <span class="location"><i class="fa-map-marker"></i>Hali Region</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card-link">
+                        <div class="card events-card">
+                            <div class="card-image"><img src="images/card6.jpg" alt="card6"></div>
+                            <h3 class="card-title events-cards-title">Estidamah organized a workshop on the Good Agricultural Practices in Greenhouses in Hail</h3>
+                            <div class="date-and-location">
+                                <span class="date"><i class="fa fa-calendar"></i> November 04, 2020</span>
+                                <span class="location"><i class="fa-map-marker"></i>Hali Region</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="#" class="know-more">View All</a>
+            </div>
+        </div>
+
+        <div class="partners-section">
+            <div class="partner"><img src="images/partner1.png" alt="" width="200"></div>
+            <div class="partner"><img src="images/partner2.png" alt=""width="300"></div>
+            <div class="partner"><img src="images/partner3.png" alt=""width="150"></div>
+        </div>
+
+        <div class="text-section subscribtion-section">
+            <div class="inner-section">
+                <h2 class="section-header">JOIN OUR COMMUNITY</h2>
+                <form action="" method="POST" class="subscibe-form">
+                    <input type="text" name="name" placeholder="Enter your name">
+                    <input type="text" name="email" placeholder="Enter your email">
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="http://">About Us</a></li>
+                    <li><a href="http://">Our Services</a></li>
+                    <li><a href="http://">Research</a></li>
+                    <li><a href="http://">Publications</a></li>
+                    <li><a href="http://">Media Center</a></li>
+                    <li><a href="http://">Careers</a></li>
+                    <li><a href="http://">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-rights-and-social-links">
+                <span>© Estidamah | All rights reserved | Saudi Arabia</span>
+                <div class="social-icons-container">
+					<a href="#" class="social-icon">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#" class="social-icon">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="#" class="social-icon">
+						<i class="fas fa-video"></i>
+					</a>
+				</div>
+            </div>
+        </footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
