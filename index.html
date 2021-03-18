@@ -39,21 +39,27 @@
 						<input type="submit" name="search-button" value="Search" class="search-button">
 					</form>
 				</div>
+                
+                <li class="logo">
+                    <a href="#">
+                        <img src="../estidama-task/logo.svg" alt="Logo" width="100">
+                    </a>
+                </li>
 			</div>
 
-			<div class="navbar">
+			<div class="mobile-navbar">
 				<ul>
-					<li class="logo">
-						<a href="#">
-							<img src="../estidama-task/logo.svg" alt="Logo" width="100">
-						</a>
-					</li>
-					<div class="menu">
+                    <li class="close-menu-button"><a href="#">&#9776;</a></li>
+				</ul>
+			</div>
+            <div class="desktop-navbar">
+				<ul>
+					<div class="menu" id="menu">
 						<li>
 							<a href="#" class="menu-item active-menu-item">Home</a>
 						</li>
 						<li class="about-item">
-							<a href="#" class="menu-item">About Us</a>    
+							<a href="javascript:void(0)" class="menu-item">About Us<i class="fas fa-sort-down"></i></a>    
                             <div class="sub-menu" id="#about-menu">
                                 <ul>
                                     <li><a href="">ABOUT ESTIDAMAH</a></li>
@@ -66,7 +72,7 @@
                             </div>
 						</li>
 						<li class="services-item">
-							<a href="#"class="menu-item">Our services</a>
+							<a href="javascript:void(0)"class="menu-item">Our services<i class="fas fa-sort-down"></i></a>
                             <div class="sub-menu" id="#services-menu">
                                 <ul>
                                     <li><a href="">Consultation</a></li>
@@ -79,7 +85,7 @@
                             </div>
 						</li>
 						<li class="research-item">
-							<a href="#"class="menu-item">Research</a>
+							<a href="javascript:void(0)"class="menu-item">Research<i class="fas fa-sort-down"></i></a>
                             <div class="sub-menu" id="#research-menu">
                                 <ul>
                                     <li><a href="">Research Themes</a></li>
@@ -90,7 +96,7 @@
                             </div>
 						</li>
 						<li class="publication-item">
-							<a href="#"class="menu-item">Publication</a>
+							<a href="javascript:void(0)"class="menu-item">Publication<i class="fas fa-sort-down"></i></a>
                             <div class="sub-menu" id="#publication-menu">
                                 <ul>
                                     <li><a href="">Flyers and Brochures</a></li>
@@ -100,7 +106,7 @@
                             </div>
 						</li>
 						<li class="media-item">
-							<a href="#"class="menu-item">Media Center</a>
+							<a href="javascript:void(0)"class="menu-item">Media Center<i class="fas fa-sort-down"></i></a>
                             <div class="sub-menu" id="#media-menu">
                                 <ul>
                                     <li><a href="">News</a></li>
@@ -113,9 +119,17 @@
 							<a href="#"class="menu-item">Careers</a>
 						</li>
 					</div>
-
 				</ul>
+                <div class="search-on-mobile">
+                    <form action="">
+                        <form action="" method="POST" class="search-form">
+                            <input type="text" name="search-bar" class="search-bar-input">
+                            <input type="submit" name="search-button" value="Search" class="search-button">
+                        </form>
+                    </form>
+                </div>
 			</div>
+            
 		</header>
 
         <div class="slider first-slider">

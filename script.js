@@ -96,20 +96,6 @@ let interval1 = setInterval( () => {
 }, 5000);
 //-------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let index1 = 0;
 const heading = jQuery('#video-heading');
 const slide1_statments = [
@@ -130,3 +116,8 @@ setInterval( () => {
     } );
     heading.fadeIn();
 }, 3000);
+
+// mobile menu 
+jQuery('.close-menu-button').click(function(){
+    jQuery('.desktop-navbar').slideToggle();
+});
