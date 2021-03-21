@@ -1,0 +1,76 @@
+@import "_general.scss";
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+  .what-we-do-header {
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      text-transform: uppercase;
+      padding: 10px;
+      font-size: 1.5rem;
+      color: $heading-color;
+      font-weight: 400;
+    }
+    p {
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    .card-link {
+      display: flex;
+      width: 30%;
+      text-decoration: none;
+      color: $black;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 4px solid $light-green;
+      .card-image {
+        width: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          transition: 0.3s;
+        }
+      }
+      .card-title {
+        text-transform: uppercase;
+        padding: 15px 0px;
+        font-weight: normal;
+        font-size: 20px;
+      }
+      .date-and-location {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px 10px 0px;
+        padding: 0px 10px;
+      }
+
+      &:hover {
+        .card {
+          border-bottom: 4px solid $green;
+        }
+        .card-image {
+          overflow: hidden;
+          img {
+            overflow: hidden;
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

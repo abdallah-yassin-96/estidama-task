@@ -1,0 +1,20 @@
+.parallax-section {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  background-image: url("../images/GreenHouseTechnology_0.jpeg");
+}
+
+.parallax2 {
+  background-image: url("../images/AdobeStock_278001692.jpeg");
+}
+
+.events-cards-title {
+  border-bottom: 2px solid #eee;
+  padding: 15px 10px !important;
+}

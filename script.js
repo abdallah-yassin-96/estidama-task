@@ -1,5 +1,9 @@
 jQuery('#search-icon').click( () => {
-    jQuery('.search-form').toggleClass('search-active');
+    // jQuery('.search-form').toggleClass('search-active');
+    jQuery('.search-button').animate({width: 'toggle'});
+
+    jQuery('.search-bar-input').delay(1000).animate({width: 'toggle'});
+
 } );
 
 let slideIndex = 0;
@@ -46,7 +50,7 @@ const showSlide = () => {
 
 let interval = setInterval( () => {
     showSlide();
-}, 17000);
+}, 170000000);
 
 //-----------------------------
 let slideIndex1 = 0;
@@ -115,7 +119,7 @@ setInterval( () => {
         
     } );
     heading.fadeIn();
-}, 3000);
+}, 300000000);
 
 // mobile menu 
 jQuery('.close-menu-button').click(function(){

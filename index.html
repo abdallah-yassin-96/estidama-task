@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Estidama</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style/style.css">
 		<script src="https://kit.fontawesome.com/01a1b27452.js" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -40,20 +40,26 @@
 					</form>
 				</div>
                 
-                <li class="logo">
-                    <a href="#">
-                        <img src="../estidama-task/logo.svg" alt="Logo" width="100">
-                    </a>
-                </li>
+                
 			</div>
 
 			<div class="mobile-navbar">
 				<ul>
-                    <li class="close-menu-button"><a href="#">&#9776;</a></li>
+                    <li class="logo">
+                        <a href="#">
+                            <img src="../estidama-task/logo.svg" alt="Logo" width="100">
+                        </a>
+                    </li>
+                    <li class="close-menu-button"><a href="#"><i class="fas fa-bars"></i></a></li>
 				</ul>
 			</div>
             <div class="desktop-navbar">
 				<ul>
+                    <li class="logo">
+                        <a href="#">
+                            <img src="../estidama-task/logo.svg" alt="Logo" width="100">
+                        </a>
+                    </li>
 					<div class="menu" id="menu">
 						<li>
 							<a href="#" class="menu-item active-menu-item">Home</a>
@@ -184,38 +190,32 @@
 
        <div class="parallax-section parallax2"></div>
 
-       <div class="text-section">
-            <div class="inner-section">
-                <h2 class="section-header">WHAT WE DO</h2>
+       <div class="cards-section">
+           <div class="what-we-do-header">
+                <h2>WHAT WE DO</h2>
                 <p>
                     We are conducting applied research in sustainable agriculture to promote collaboration, technology, and knowledge transfer in the areas of horticulture.
                 </p>
-                <div class="cards-container">
-                    <a href="#" class="card-link">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/card1.jpg" alt="card1-image">
-                            </div>
-                            <h3 class="card-title">Latest News</h3>
-                        </div>
-                    </a>
-                    <a href="#" class="card-link">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/card2.jpg" alt="card2-image">
-                            </div>
-                            <h3 class="card-title">Publications</h3>
-                        </div>
-                    </a>
-                    <a href="#" class="card-link">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/card3.jpeg" alt="card3-image">
-                            </div>
-                            <h3 class="card-title">Research Themes</h3>
-                        </div>
-                    </a>
-                </div>
+           </div>
+            <div class="cards-container">
+                <a href="#" class="card-link">
+                    <div class="card-image">
+                        <img src="images/card1.jpg" alt="card1-image">
+                    </div>
+                    <h3 class="card-title">Latest News</h3>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card-image">
+                        <img src="images/card2.jpg" alt="card2-image">
+                    </div>
+                    <h3 class="card-title">Publications</h3>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card-image">
+                        <img src="images/card3.jpeg" alt="card3-image">
+                    </div>
+                    <h3 class="card-title">Research Themes</h3>
+                </a>
             </div>
         </div>
 
@@ -258,44 +258,36 @@
             </div>
         </div>
 
-        <div class="text-section events-section">
-            <div class="inner-section">
-                <h2 class="section-header">LATEST EVENTS</h2>
-                <p>We have interested horticulture result that we want to share with you, join us on on of the following</p>
-                <div class="cards-container">
-                    <a href="#" class="card-link">
-                        <div class="card events-card">
-                            <div class="card-image"><img src="images/card4.jpeg" alt="card4"></div>
-                            <h3 class="card-title events-cards-title">Modern Agriculture is a Promising Investment in Greenhouses</h3>
-                            <div class="date-and-location">
-                                <span class="date"><i class="fa fa-calendar"></i> November 04, 2020</span>
-                                <span class="location"><i class="fa-map-marker"></i>Hali Region</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="card-link">
-                        <div class="card events-card">
-                            <div class="card-image"><img src="images/card5.png" alt="card5"></div>
-                            <h3 class="card-title events-cards-title">Estidamah participated in a workshop to raise awareness of Good Agricultural Practices in Greenhouses in Tabuk</h3>
-                            <div class="date-and-location">
-                                <span class="date"><i class="fa fa-calendar"></i> November 04, 2020</span>
-                                <span class="location"><i class="fa-map-marker"></i>Hali Region</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="card-link">
-                        <div class="card events-card">
-                            <div class="card-image"><img src="images/card6.jpg" alt="card6"></div>
-                            <h3 class="card-title events-cards-title">Estidamah organized a workshop on the Good Agricultural Practices in Greenhouses in Hail</h3>
-                            <div class="date-and-location">
-                                <span class="date"><i class="fa fa-calendar"></i> November 04, 2020</span>
-                                <span class="location"><i class="fa-map-marker"></i>Hali Region</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <a href="#" class="main-button" style="margin-top: 15px;">View All</a>
+        <div class="events-section">
+            <h2>LATEST EVENTS</h2>
+            <p>We have interested horticulture result that we want to share with you, join us on on of the following</p>
+            <div class="cards-container">
+                <a href="#" class="card-link">
+                    <div class="card-image"><img src="images/card4.jpeg" alt="card4"></div>
+                    <h3 class="card-title events-cards-title">Modern Agriculture is a Promising Investment in Greenhouses</h3>
+                    <div class="date-and-location">
+                        <span class="date"><i class="fa fa-calendar"></i> November 04, 2020</span>
+                        <span class="location"><i class="fas fa-map-marker-alt"></i>Hali Region</span>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card-image"><img src="images/card5.png" alt="card5"></div>
+                    <h3 class="card-title events-cards-title">Estidamah participated in a workshop to raise awareness of Good Agricultural Practices in Greenhouses in Tabuk</h3>
+                    <div class="date-and-location">
+                        <span class="date"><i class="fa fa-calendar"></i> November 04, 2020</span>
+                        <span class="location"><i class="fas fa-map-marker-alt"></i>Hali Region</span>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card-image"><img src="images/card6.jpg" alt="card6"></div>
+                    <h3 class="card-title events-cards-title">Estidamah organized a workshop on the Good Agricultural Practices in Greenhouses in Hail</h3>
+                    <div class="date-and-location">
+                        <span class="date"><i class="fa fa-calendar"></i> November 04, 2020</span>
+                        <span class="location"><i class="fas fa-map-marker-alt"></i>Hali Region</span>
+                    </div>
+                </a>
             </div>
+            <a href="#" class="main-button">View All</a>
         </div>
 
         <div class="partners-section">
@@ -316,17 +308,15 @@
         </div>
 
         <footer>
-            <div class="footer-menu">
-                <ul>
-                    <li><a href="http://">About Us</a></li>
-                    <li><a href="http://">Our Services</a></li>
-                    <li><a href="http://">Research</a></li>
-                    <li><a href="http://">Publications</a></li>
-                    <li><a href="http://">Media Center</a></li>
-                    <li><a href="http://">Careers</a></li>
-                    <li><a href="http://">Terms of Use</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="http://">About Us</a></li>
+                <li><a href="http://">Our Services</a></li>
+                <li><a href="http://">Research</a></li>
+                <li><a href="http://">Publications</a></li>
+                <li><a href="http://">Media Center</a></li>
+                <li><a href="http://">Careers</a></li>
+                <li><a href="http://">Terms of Use</a></li>
+            </ul>
             <div class="footer-rights-and-social-links">
                 <span>© Estidamah | All rights reserved | Saudi Arabia</span>
                 <div class="social-icons-container">

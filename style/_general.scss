@@ -1,0 +1,35 @@
+$green: #007236;
+$light-green: #3fd238;
+$yellow: #ffd100;
+$black: #000000;
+$white: #ffffff;
+$heading-color: #444750;
+
+.main-button {
+  background-color: transparent;
+  color: $green;
+  border: 1px solid $green;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: 0.2s linear;
+  text-decoration: none;
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
+}
+
+.secondary-button {
+  background-color: $yellow;
+  color: $black;
+  border: 1px solid $yellow;
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: 0.2s linear;
+  text-decoration: none;
+  &:hover {
+    background-color: transparent;
+    color: $white;
+  }
+}
