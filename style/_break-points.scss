@@ -44,10 +44,16 @@
                   color: $white;
                   padding: 10px 30px;
                 }
+                &:first-child {
+                  display: none;
+                }
               }
             }
           }
         }
+      }
+      .logo {
+        display: none;
       }
       .search-on-mobile {
         display: block;

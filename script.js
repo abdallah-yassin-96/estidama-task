@@ -1,9 +1,6 @@
 jQuery('#search-icon').click( () => {
-    // jQuery('.search-form').toggleClass('search-active');
-    jQuery('.search-button').animate({width: 'toggle'});
-
-    jQuery('.search-bar-input').delay(1000).animate({width: 'toggle'});
-
+    jQuery('.search-button').delay(300).toggle('slide');
+    jQuery('.search-bar-input').toggle('slide');
 } );
 
 let slideIndex = 0;
